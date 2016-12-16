@@ -14,7 +14,7 @@ typedef struct
 	string200 authors;
 	string50 publicationDate;
 	int callNumber;
-	string30 materialType;
+	string30 readingMaterialType;
 	int numberOfCopies;
 }bookType;
 
