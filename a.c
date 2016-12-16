@@ -14,9 +14,9 @@ typedef struct
 	string200 authors;
 	string50 publicationDate;
 	int callNumber;
-	string30 readingMaterialType;
+	string30 materialType;
 	int numberOfCopies;
-}bookType;
+}readingMaterialType;
 
 typedef struct
 {
@@ -30,7 +30,7 @@ typedef struct
 }clientType;
 
 int main(){
-	bookType pAcc;
+	readingMaterialType pAcc;
 	strcpy(pAcc.authors,"Shit");
 	printf(pAcc.authors);
 	return 0;
