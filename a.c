@@ -3,9 +3,10 @@
 #include <string.h>
 #include <time.h>
 
-typedef char string10 [10];
+typedef char string10 [11];
+typedef char string30 [31];
 typedef char string50 [51];
-typedef char string200 [200];
+typedef char string200 [201];
 
 typedef struct
 {
@@ -13,22 +14,24 @@ typedef struct
 	string200 authors;
 	string50 publicationDate;
 	int callNumber;
-	string50 materialType;
+	string30 materialType;
 	int numberOfCopies;
-}book;
+}bookType;
 
 typedef struct
 {
 	string50 name;
-	string;
-	string50 publicationDate;
-	int callNumber;
-	string50 materialType;
-	int numberOfCopies;
-}book;
+	string10 idNumber;
+	string30 clientType;
+	int nBooksBorrowed;
+	int dueDates;
+	double fines;
+	
+}clientType;
 
 int main(){
-	
-	printf("fuck");
+	bookType pAcc;
+	strcpy(pAcc.authors,"Shit");
+	printf(pAcc.authors);
 	return 0;
 }
